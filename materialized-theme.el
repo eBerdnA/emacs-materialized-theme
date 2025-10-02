@@ -966,6 +966,8 @@
   (set-face-background 'default background)
   (add-to-list 'default-frame-alist `(background-color . ,background))
 
+  (set-cursor-color "#FF0080")
+
   ;; Trying out line underline (instead of wave).
   (mapatoms (lambda (atom)
               (let ((underline nil))
