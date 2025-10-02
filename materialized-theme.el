@@ -427,6 +427,13 @@
    `(magit-sequence-part ((t (:foreground ,yellow))))
    `(magit-sequence-head ((t (:foreground ,blue))))
    `(magit-sequence-drop ((t (:foreground ,red))))
+
+   ;; smerge
+   `(smerge-upper ((,class (:background "#272727"))))
+   `(smerge-lower ((,class (:background "#272727"))))
+   `(smerge-refined-added ((,class (:background "#335533"))))
+   `(smerge-markers ((,class (:background "#272727"))))
+
    ;; git-gutter
    `(git-gutter:modified ((,class (:foreground ,purple :weight bold))))
    `(git-gutter:added ((,class (:foreground ,green :weight bold))))
