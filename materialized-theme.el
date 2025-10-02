@@ -500,6 +500,9 @@
    `(mm/master-face ((,class (:inherit region :foreground nil :background nil))))
    `(mm/mirror-face ((,class (:inherit region :foreground nil :background nil))))
 
+   ;; read-multiple-choice
+   `(read-multiple-choice-face ((,class (:background ,background :box nil :underline nil))))
+
    `(org-agenda-structure ((,class (:foreground ,aqua :bold t))))
    `(org-agenda-date ((,class (:foreground ,blue :underline nil))))
    `(org-agenda-done ((,class (:foreground "#b9ccb2" :strike-through nil))))
@@ -518,7 +521,8 @@
    `(org-footnote ((,class (:foreground ,aqua))))
    `(org-formula ((,class (:foreground ,red))))
    `(org-hide ((,class (:foreground ,background :background ,background :strike-through nil))))
-   `(org-link ((,class (:foreground ,blue :underline t))))
+   `(org-link ((,class (:foreground ,blue :underline nil))))
+   `(org-target ((,class (:underline nil))))
    `(org-scheduled ((,class (:foreground ,green))))
    `(org-scheduled-previously ((,class (:foreground ,orange))))
    `(org-scheduled-today ((,class (:foreground ,green))))
