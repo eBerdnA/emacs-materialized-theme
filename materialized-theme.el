@@ -43,7 +43,7 @@
 
 (deftheme materialized
   "A UI Theme for Emacs based on materialized design colors")
-(display-color-cells (selected-frame))
+
 (let* ((class '((class color) (min-colors 89)))
        (256color  (eq (display-color-cells (selected-frame)) 256))
        (truecolor (eq (display-color-cells (selected-frame)) 16777216))
@@ -138,7 +138,7 @@
    `(flycheck-warning ((,class (:underline (:style wave :color ,orange)))))
 
    ;; highlight indentation
-   `(highlight-indentation-face ((,class (:background, current-line))))
+   `(highlight-indentation-face ((,class (:background ,current-line))))
    `(highlight-indentation-current-column-face ((,class (:background ,far-background))))
 
    ;; Flymake
