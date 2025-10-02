@@ -1,0 +1,10 @@
+* Materialized Theme for Emacs
+[[https://github.com/cpaulik/emacs-material-theme/blob/master/LICENSE.txt][file:https://img.shields.io/badge/license-MIT-green.svg]]
+
+An Emacs Theme derived from [[http://github.com/cpaulik][Christoph Paulik]]'s [[https://github.com/cpaulik/emacs-material-theme][emacs-material-theme]] using my own tweaks.
+
+** Dark Theme only
+
+  #+begin_src emacs-lisp
+  (load-theme 'materialized t)
+  #+end_src
