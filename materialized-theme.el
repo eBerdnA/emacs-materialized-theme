@@ -120,11 +120,11 @@
                                         :background ,"#ef6c00"
                                         :weight bold))))
 
-   `(ace-jump-face-background ((,class (:foreground ,inactive-gray
+   `(ace-jump-face-background ((,class (:foreground ,background
                                         :weight normal))))
 
    ;; avy-jump-mode
-   `(avy-background-face ((,class (:foreground ,inactive-gray
+   `(avy-background-face ((,class (:foreground ,background
                                    :weight normal))))
    `(avy-lead-face-0 ((,class (:foreground ,foreground
                                :background ,"#ef6c00"
@@ -139,7 +139,7 @@
 
    ;; highlight indentation
    `(highlight-indentation-face ((,class (:background, current-line))))
-   `(highlight-indentation-current-column-face ((,class (:background, far-background))))
+   `(highlight-indentation-current-column-face ((,class (:background ,far-background))))
 
    ;; Flymake
    `(flymake-warnline ((,class (:underline (:style wave :color ,orange) :background ,background))))
@@ -225,7 +225,7 @@
    `(border ((,class (:background ,current-line))))
    `(internal-border ((,class (:background ,background))))
    `(vertical-border ((,class (:background ,selection
-                               :foreground, selection))))
+                               :foreground ,selection))))
    `(border-glyph ((,class (nil))))
    `(highlight ((,class (:inverse-video nil :background ,current-line))))
    `(hl-line ((,class (:inverse-video nil :background ,current-line))))
@@ -535,7 +535,7 @@
                                                 :background unspecified :box nil :extend t))))
    `(org-block-end-line ((,class (:foreground ,"#b3e5fc" :background "#1e2930"
                                               :background unspecified :box nil :extend t))))
-   `(org-kbd ((,class (:background ,inactive-gray :foreground ,foreground
+   `(org-kbd ((,class (:background ,background :foreground ,foreground
                                    :box (:line-width 1 :color nil :style pressed-button)))))
 
    `(org-level-1 ((,class (:inherit outline-1
@@ -674,14 +674,14 @@
    ;; `(company-echo ((,class ())))
    ;; `(company-echo-common ((,class ())))
 
-   `(company-preview ((,class (:foreground ,comment :background ,inactive-gray))))
-   `(company-preview-common ((,class (:inherit default :foreground 'unspecified :background ,background))))
-   `(company-preview-search ((,class (:foreground "sandy brown" :background unspecified))))
+   `(company-preview ((,class (:foreground ,comment :background ,background))))
+   `(company-preview-common ((,class (:inherit default :foreground ,comment :background ,background))))
+   `(company-preview-search ((,class (:foreground "sandy brown" :background ,background))))
    `(company-scrollbar-bg ((,class (:background "#F0F0F0"))))
    `(company-scrollbar-fg ((,class (:background "#C0C0C0"))))
-   `(company-template-field ((,class (:background ,inactive-gray))))
-   `(company-tooltip ((,class (:weight bold :foreground, far-background :background ,inactive-gray))))
-   `(company-tooltip-annotation ((,class (:weight normal :foreground ,comment :background ,inactive-gray))))
+   `(company-template-field ((,class (:background ,background))))
+   `(company-tooltip ((,class (:weight bold :foreground ,comment :background ,background))))
+   `(company-tooltip-annotation ((,class (:weight normal :foreground ,comment :background ,background))))
    `(company-tooltip-annotation-selection ((,class (:weight normal :inherit company-tooltip-selection))))
    `(company-tooltip-common ((,class (:weight normal :inherit company-tooltip))))
    `(company-tooltip-common-selection ((,class (:weight normal :inherit company-tooltip-selection))))
@@ -711,7 +711,7 @@
 
    ;; Powerline
    `(powerline-active1 ((t (:foreground ,foreground :background ,selection))))
-   `(powerline-active2 ((t (:foreground ,foreground :background ,inactive-gray))))
+   `(powerline-active2 ((t (:foreground ,foreground :background ,background))))
    `(powerline-inactive1 ((t (:foreground ,comment :background ,selection))))
    `(powerline-inactive2 ((t (:foreground ,comment :background ,selection))))
 
