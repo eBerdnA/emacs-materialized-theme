@@ -434,6 +434,9 @@
    `(smerge-refined-added ((,class (:background "#335533"))))
    `(smerge-markers ((,class (:background "#272727"))))
 
+   ;; keycast
+   `(keycast-key ((,class (:foreground "#000000" :background "#2BA3FF" :box nil))))
+
    ;; git-gutter
    `(git-gutter:modified ((,class (:foreground ,purple :weight bold))))
    `(git-gutter:added ((,class (:foreground ,green :weight bold))))
