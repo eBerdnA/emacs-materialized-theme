@@ -703,7 +703,7 @@
    `(show-paren-match ((,class (:background unspecified :foreground "#FA009A"))))
 
    ;; org-indent
-   `(org-indent ((,class (:background ,background))))
+   `(org-indent ((,class (:foreground ,background :background ,background))))
 
    ;; org-faces
    `(org-meta-line ((,class (:height unspecified))))
