@@ -230,14 +230,13 @@
    `(highlight ((,class (:inverse-video nil :background ,current-line))))
    `(hl-line ((,class (:inverse-video nil :background ,current-line))))
    `(gui-element ((,class (:background ,current-line :foreground ,foreground))))
-   `(mode-line ((,class (:foreground ,foreground :background "#191919" :box nil :overline ,mode-line))))
+   `(mode-line ((,class (:foreground ,foreground :background "#3d3c3c" :box nil :overline ,mode-line))))
    `(mode-line-buffer-id ((,class (:foreground ,foreground :background nil :weight bold))))
    `(mode-line-inactive ((,class (:inherit mode-line
                                            :foreground "#5B6268"
                                            :background ,background :weight normal
                                            :overline ,mode-line
-                                           :underline ,mode-line
-                                           :box nil))))
+                                           :box (:line-width -1 :color "#555555" :style nil)))))
    `(mode-line-emphasis ((,class (:foreground ,foreground :slant italic))))
    `(mode-line-highlight ((,class (:foreground ,purple :box nil))))
    `(minibuffer-prompt ((,class (:foreground ,blue))))
