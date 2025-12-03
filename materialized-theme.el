@@ -231,7 +231,7 @@
    `(hl-line ((,class (:inverse-video nil :background ,current-line))))
    `(gui-element ((,class (:background ,current-line :foreground ,foreground))))
    `(mode-line ((,class (:foreground ,foreground :background "#3d3c3c" :box nil :overline ,mode-line))))
-   `(mode-line-buffer-id ((,class (:foreground ,foreground :background nil :weight bold))))
+   `(mode-line-buffer-id ((,class (:foreground ,foreground :background unspecified :weight bold))))
    `(mode-line-inactive ((,class (:inherit mode-line
                                            :foreground "#5B6268"
                                            :background ,background :weight normal
@@ -274,8 +274,8 @@
    ;; Parenthesis dimming (parenface)
    `(paren-face ((,class (:foreground ,comment :background nil))))
 
-   `(sh-heredoc ((,class (:foreground nil :inherit font-lock-string-face :weight normal))))
-   `(sh-quoted-exec ((,class (:foreground nil :inherit font-lock-preprocessor-face))))
+   `(sh-heredoc ((,class (:foreground unspecified :inherit font-lock-string-face :weight normal))))
+   `(sh-quoted-exec ((,class (:foreground unspecified :inherit font-lock-preprocessor-face))))
    `(slime-highlight-edits-face ((,class (:weight bold))))
    `(slime-repl-input-face ((,class (:weight normal :underline nil))))
    `(slime-repl-prompt-face ((,class (:underline nil :weight bold :foreground ,purple))))
@@ -447,7 +447,7 @@
    `(git-gutter-fr:added ((,class (:foreground ,green :weight bold))))
    `(git-gutter-fr:deleted ((,class (:foreground ,red :weight bold))))
 
-   `(link ((,class (:foreground nil :underline t))))
+   `(link ((,class (:foreground unspecified :underline t))))
    `(widget-button ((,class (:underline t :weight bold))))
    `(widget-field ((,class (:background ,current-line :box (:line-width 1 :color ,foreground)))))
 
@@ -506,7 +506,7 @@
    `(org-agenda-date ((,class (:foreground ,blue :underline nil))))
    `(org-agenda-done ((,class (:foreground "#b9ccb2" :strike-through nil))))
    `(org-agenda-dimmed-todo-face ((,class (:foreground ,comment))))
-   `(org-block ((,class (:background unspecified :box nil :foreground ,green :background nil :extend t))))
+   `(org-block ((,class (:background unspecified :box unspecified :foreground ,green :background unspecified :extend t))))
    `(org-block-background ((,t (:background ,far-background :extend t))))
    `(org-code ((,class (:background unspecified))))
    `(org-column ((,class (:background ,current-line))))
